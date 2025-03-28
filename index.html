@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Github Search</title>
+  </head>
+  <body>
+    <main>
+      <form class="search_bar">
+        <input type="text" class="searchtxt" placeholder="Enter GitHub username">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+      <div class="details">
+        <ul>
+          <li>Name: <span class="name"></span></li>
+          <li><img class="img" src="" alt="img"></li>
+          <li>Followers: <span class="followers"></span></li>
+          <li>Repo: <a class="repo" href=""></a></li>
+        </ul>
+      </div>
+      
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/ghSearch.js"></script>
+  </body>
+</html>
