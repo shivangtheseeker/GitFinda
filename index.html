@@ -6,24 +6,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Github Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
-  <body>
-    <main>
-      <form class="search_bar">
-        <input type="text" class="searchtxt" placeholder="Enter GitHub username">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </form>
-      <div class="details">
-        <ul>
-          <li>Name: <span class="name"></span></li>
-          <li><img class="img" src="" alt="img"></li>
-          <li>Followers: <span class="followers"></span></li>
-          <li>Repo: <a class="repo" href=""></a></li>
-        </ul>
+  <body data-theme="dark">
+    <div class="container">
+      <header class="header">    
+        <search class="search_bar">
+          <input type="text" placeholder="Find your mate">
+          <div class="search_icon">
+            <span class="material-symbols-outlined ">search</span>
+          </div>
+        </search>
+        <div class="mode_switcher">
+          <span class="material-symbols-outlined dark_mode">
+            dark_mode
+          </span>
+          <span class="material-symbols-outlined light_mode">
+            light_mode
+          </span>
+        </div>
+      </header>
+
+      <div class="bundler">
+
+        <article class="profile">
+          <section class="profile_details">
+            
+            <img class="profile_pic" src="public/WhatsApp Image 2024-04-07 at 19.44.41_71389453.jpg" alt="profile_pic">
+         
+            <section class="profile_highlights">
+              <div class="profile_naming">
+                <section class="profile_name">
+                  <h1 class="profile_mainname">Shivang</h1>
+                  <p class="profile_username">shivangtheseeker</p>
+                </section>
+                <section class="profile_community">
+                  <div class="follow">
+                    <h2 class="follow_num">29</h2>
+                    <p class="follow_txt">Followers</p>
+                  </div>
+                  <div class="follow">
+                    <h2 class="follow_num">30</h2>
+                    <p class="follow_txt">Following</p>
+                  </div>
+                </section>
+              </div>
+              
+              <button class="profile_ctaBtn">Visit Profile</button>
+            </section>
+  
+          </section>
+          <section class="profile_intro">
+            <p class="profile_bio">I am a designer and developer. I’m learning coding and designing </p>
+            <section class="profile_otherDetails">
+              <div class="detail">
+                 <span class="material-symbols-outlined profile_icon">
+                   location_on
+                 </span>
+                <p class="user_location detail_txt">Agra</p>
+              </div>
+              <div class="detail">
+                <span class="material-symbols-outlined profile_icon">
+                  work
+                </span>
+                <p class="user_company detail_txt">Google</p>
+              </div>
+              <div class="detail">
+                <span class="material-symbols-outlined profile_icon">
+                  person
+                </span>
+                <a class="user_portfolio detail_txt" href="http://">Portfolio</a>
+              </div>
+              <div class="detail">
+                <span class="material-symbols-outlined profile_icon">
+                  mail
+                </span>
+                <a class="user_mail detail_txt" href="mailto:">E-mail</a>
+              </div>
+            </section>
+  
+          </section>
+        </article>
+  
+        <article class="repo_list">
+          <div class="divider"></div>
+          <nav class="repo_toggle">
+            <h1 class="repo repo_txt">Repo</h1>
+            <h1 class="fork repo_txt">Fork</h1>
+          </nav>
+  
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+
+          <article class="repo_cards">
+            <div class="repo_card_details">
+              <h1 class="repo_card_heading">Marketing-page</h1>
+              <div class="status">
+                <p class="repo_card_status">Public</p>
+              </div>
+            </div>
+            <div class="repo_card_lang">
+              <div class="lang_clr"></div>
+              <p class="lang_name">Java-Script</p>
+            </div>
+  
+          </article>
+  
+        </article>
+
       </div>
-      
-    </main>
+
+    </div>
+   
     <script type="module" src="/src/main.js"></script>
-    <script src="/src/ghSearch.js"></script>
   </body>
+    
 </html>

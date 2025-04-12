@@ -1,0 +1,131 @@
+.repo_list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-block-end: 32px;
+  
+}
+
+.repo_toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:96px;
+    margin-block-start: 32px;
+}
+
+.repo_txt{
+    position: relative;
+    font-size: var(--H1-heading);
+    font-family: var(--heading-font);
+}
+
+.repo_cards{
+    width: 100%;
+    border: 1px solid var(--theme-clr-dark);
+    border-radius: 8px ;
+    padding-block: 16px;
+    padding-inline: 12px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.repo_card_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo_card_heading{
+    font-family: var(--heading-font);
+    font-size: var(--H1-heading) ;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--theme-clr-dark);
+    border-radius: 16px;
+    padding-block: 4px;
+    padding-inline: 8px;
+}
+
+.repo_card_status{
+    font-family: var(--body-font);
+    font-size: var(--B3-body) ;
+}
+
+.repo_card_lang{
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px ;
+}
+
+.lang_clr{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.lang_name{
+    font-family: var(--body-font);
+    font-size: var(--B2-body);
+}
+
+@media (min-width: 768px ){
+    .repo_toggle{
+        gap: 152px;
+        justify-content: flex-start;
+    }
+    .repo_txt{
+        font-size: var(--H2-heading);
+    }
+
+    .repo_cards{
+        padding-block: 20px;
+        padding-inline: 16px;
+    }
+
+    .repo_card_heading{
+        font-size: var(--H2-heading) ;
+    }
+
+    .status{
+        padding-block: 6px;
+       
+    }
+
+    .repo_card_status{
+
+        font-size: var(--B2-body) ;
+    }
+    
+    
+    .lang_name{
+
+        font-size: var(--B1-body);
+    }
+
+}
+
+@media (min-width: 1024px ){
+
+
+    .repo_cards{
+        padding-block: 32px;
+        padding-inline: 24px;
+    }
+
+    .repo_card_heading{
+        font-size: var(--H2-heading) ;
+    }
+
+
+}
+
+

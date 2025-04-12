@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    /* Typography 
+       Base value : 16px
+       Scale : 1.25  */
+
+    /*font family*/
+    --heading-font : 'Poppins', sans-serif;
+    --body-font : 'Roboto', sans-serif;
+    
+    /*Heading*/
+    --H1-heading : 16px;
+    --H2-heading : 20px;
+    --h3-heading : 25px;
+
+    /*Body*/
+    --B1-body : 16px;
+    --B2-body : 13px;
+    --B3-body : 10px;
+
+    /*line height*/
+    --H1-heading-lh : 24px;
+    --H2-heading-lh : 30px;
+    --H3-heading-lh : 37.5px;
+
+    --B1-body-lh : 24px;
+    --B2-body-lh : 19.5px;
+    --B3-body-lh : 15px;
+
+    /*body weight*/
+
+
+    /* Colors */
+    --theme-blue-dark : #00010f;
+    --theme-blue-light1 : #e6e6e9;
+    --theme-blue-light2 : #8a8b9a;
+    --theme-blue-light3 : #54556c;
+    
+
+    /* light mode */
+    --background-clr-light : white;
+
+    /* dark mode */
+    --background-clr-dark : #000224;
+}
+
+[data-theme="light"]{
+    --background : var(--background-clr-light);
+    --theme-clr-dark : var(--theme-blue-dark);
+    --theme-clr-light : var(--theme-blue-light1);
+    --secondary-txt-clr : var(--theme-blue-light2);
+    --icon-clr: var(--theme-blue-light3);
+}
+
+[data-theme="dark"]{
+    --background : var(--background-clr-dark);
+    --theme-clr-dark : var(--theme-blue-light1);
+    --theme-clr-light : var(--theme-blue-dark);
+    --secondary-txt-clr : var(--theme-blue-light2);
+    --icon-clr: var(--theme-blue-light3);
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+svg,
+span,
+input,
+button { display: block; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img { height: auto; }
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+body{
+  background-color: var(--background);
+  color: var(--theme-clr-dark);
+  line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
