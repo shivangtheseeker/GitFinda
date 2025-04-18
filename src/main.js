@@ -5,10 +5,15 @@ import '../styles/repo_list.css'
 import '../styles/utility.css'
 
 
-let body = document.querySelector("body");
-let darkMode = document.querySelector(".dark_mode");
-let lightMode = document.querySelector(".light_mode");
-let modeSwitcher = document.querySelector(".mode_switcher");
+const body = document.querySelector("body");
+const darkMode = document.querySelector(".dark_mode");
+const lightMode = document.querySelector(".light_mode");
+const modeSwitcher = document.querySelector(".mode_switcher");
+const repoHeader = document.querySelector('.repo_toggle');
+const profile = document.querySelector('.profile')
+const profilePic = document.querySelector('.profile_pic')
+
+
 modeSwitcher.addEventListener('click', ()=>{
     if(body.dataset.theme === "dark"){
         body.dataset.theme = "light";
@@ -23,3 +28,26 @@ modeSwitcher.addEventListener('click', ()=>{
     }
 
 })
+
+
+
+
+function createStickyObserver(targetElement, stuckClass) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          entry.target.classList.add(stuckClass);
+        } else {
+          entry.target.classList.remove(stuckClass);
+        }
+      },
+      {
+        rootMargin: "-1px 0px 0px 0px",
+        threshold: 1
+      }
+    );
+  
+    observer.observe(targetElement);
+}
+  
+createStickyObserver(repoHeader , 'stuck'); 

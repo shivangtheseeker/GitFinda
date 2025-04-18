@@ -7,18 +7,37 @@
   
 }
 
+.repo_bundle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .repo_toggle{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:96px;
-    margin-block-start: 32px;
+  
 }
 
-.repo_txt{
+.repo{
     position: relative;
     font-size: var(--H1-heading);
     font-family: var(--heading-font);
+    cursor: pointer;
+}
+
+
+.fork{
+    font-size: var(--H1-heading);
+    font-family: var(--heading-font);
+    color: var(--secondary-txt-clr);
+    cursor: pointer;
 }
 
 .repo_cards{
@@ -40,6 +59,7 @@
 .repo_card_heading{
     font-family: var(--heading-font);
     font-size: var(--H1-heading) ;
+    overflow: hidden;
 }
 
 .status{

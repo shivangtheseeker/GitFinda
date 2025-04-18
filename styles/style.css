@@ -103,7 +103,12 @@ body{
   line-height: 100%;
 }
 
-
+.stuck{
+  background-color: var(--background);
+  padding-block-start: 36px;
+  padding-block-end: 32px;
+  transition: all 0.3s ease;
+}
 
 
 

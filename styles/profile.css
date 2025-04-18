@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-block-start: 36px;
 }
 
 .profile_details{ 
@@ -140,8 +139,10 @@
 
 @media (min-width: 768px ){
     .profile{
-        width:min-content ;
-       
+        width:min-content;
+        position: sticky;
+        top: 36px;
+        padding-block-end: 32px;
     }
 
     .profile_details{

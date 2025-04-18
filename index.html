@@ -12,7 +12,7 @@
     <div class="container">
       <header class="header">    
         <search class="search_bar">
-          <input type="text" placeholder="Find your mate">
+          <input type="text" class="searchtxt" placeholder="Find your mate">
           <div class="search_icon">
             <span class="material-symbols-outlined ">search</span>
           </div>
@@ -42,17 +42,19 @@
                 </section>
                 <section class="profile_community">
                   <div class="follow">
-                    <h2 class="follow_num">29</h2>
+                    <h2 class="follow_num followers">29</h2>
                     <p class="follow_txt">Followers</p>
                   </div>
                   <div class="follow">
-                    <h2 class="follow_num">30</h2>
+                    <h2 class="follow_num following">30</h2>
                     <p class="follow_txt">Following</p>
                   </div>
                 </section>
               </div>
               
-              <button class="profile_ctaBtn">Visit Profile</button>
+              <a class="btnCta" href="">
+                <button class="profile_ctaBtn">Visit Profile</button>
+              </a>
             </section>
   
           </section>
@@ -89,117 +91,24 @@
         </article>
   
         <article class="repo_list">
-          <div class="divider"></div>
           <nav class="repo_toggle">
             <h1 class="repo repo_txt">Repo</h1>
             <h1 class="fork repo_txt">Fork</h1>
           </nav>
-  
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
+          <section class="repo_bundle">
 
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
+          </section>
 
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
-
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
-
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
-
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
-
-          <article class="repo_cards">
-            <div class="repo_card_details">
-              <h1 class="repo_card_heading">Marketing-page</h1>
-              <div class="status">
-                <p class="repo_card_status">Public</p>
-              </div>
-            </div>
-            <div class="repo_card_lang">
-              <div class="lang_clr"></div>
-              <p class="lang_name">Java-Script</p>
-            </div>
-  
-          </article>
-  
         </article>
 
       </div>
 
     </div>
+    
    
     <script type="module" src="/src/main.js"></script>
+    <script type="" src="src/apiIntrigation.js"></script>
+    <script type="" src="src/ghSearch.js"></script>
   </body>
     
 </html>
